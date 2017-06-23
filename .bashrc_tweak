@@ -1,0 +1,22 @@
+# command color formatting
+function prompt
+{
+local WHITE="\[\033[1;37m\]";
+local GREEN="\[\033[0;32m\]";
+local CYAN="\[\033[0;36m\]";
+local GRAY="\[\033[0;37m\]";
+local BLUE="\[\033[0;34m\]";
+export PS1="
+${GREEN}\u${CYAN}@${BLUE}\h ${CYAN}\w${WHITE}
+$ "
+}
+prompt
+
+# edit ~/.bashrc and ~/.vimrc
+alias bcfg='vim ~/.bashrc'
+alias rbcfg='source ~/.bashrc'
+alias vcfg='vim ~/.vimrc'
+
+# change directory and list files
+function cdl { cd $1; ls; }
+
