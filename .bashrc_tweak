@@ -13,10 +13,15 @@ $ "
 prompt
 
 # edit ~/.bashrc and ~/.vimrc
-alias bcfg='vim ~/.bashrc'
+alias bcfg='vim ~/jiwang_config/.bashrc_tweak'
 alias rbcfg='source ~/.bashrc'
 alias vcfg='vim ~/.vimrc'
 
 # change directory and list files
 function cdl { cd $1; ls; }
+
+# alias common commands
+alias c='clear'
+alias up='cd ..'
+alias disk='cd /'
 
